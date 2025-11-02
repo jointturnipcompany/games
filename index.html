@@ -1,11 +1,174 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title>Joint Turnip Company</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joint Turnip Company Games / Kentaro Owaki Games</title>
+  <style>
+    body {
+      font-family: "Zen Kaku Gothic New", "Segoe UI", sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0.2rem 0;
+      font-size: 1.8rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .game-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .game-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .game-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .game-content {
+      padding: 1rem;
+    }
+
+    .game-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .desc-block {
+      margin-bottom: 1rem;
+    }
+
+    .desc-label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .desc-text {
+      margin: 0.2rem 0 0.8rem 0;
+      font-size: 0.95rem;
+    }
+
+    .play-link {
+      display: inline-block;
+      background: #34a853;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .play-link:hover {
+      background: #2c8f44;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <h1>games</h1>
-  <p>Slime Jump</p>
+  <header>
+    <h1>Joint Turnip Company Games</h1>
+    <p>オリジナルゲームの紹介サイト / Original Game Showcase</p>
+  </header>
+
+  <main class="container">
+    <!-- ▼ ゲーム1 ▼ -->
+    <div class="game-card">
+      <img src="images/game1_screenshot.jpg" alt="スラジャン スクリーンショット">
+      <div class="game-content">
+        <div class="game-title">スライムジャンプ / Slime Jump</div>
+
+        <div class="desc-block">
+          <div class="desc-label">日本語：</div>
+          <div class="desc-text">
+            スライムを操作してどこまで登れるか挑戦しよう！<br>
+            空き時間に気軽に楽しめる！
+          </div>
+        </div>
+
+        <div class="desc-block">
+          <div class="desc-label">English:</div>
+          <div class="desc-text">
+            See how high your slime can go!<br>
+            Quick, fun, and addictive jumps!
+          </div>
+        </div>
+
+        <a class="play-link" href="https://play.google.com/store/apps/details?id=com.example.taiko" target="_blank">
+          Google Playで見る / View on Google Play
+        </a>
+      </div>
+    </div>
+    <!-- ▲ ゲーム1ここまで ▲ -->
+
+    <!-- ▼ 将来追加するゲームのテンプレ ▼ -->
+    <!--
+    <div class="game-card">
+      <img src="images/game2_screenshot.jpg" alt="ゲーム2のスクリーンショット">
+      <div class="game-content">
+        <div class="game-title">ゲームタイトル / Game Title</div>
+
+        <div class="desc-block">
+          <div class="desc-label">日本語：</div>
+          <div class="desc-text">ここに日本語の説明文を書きます。</div>
+        </div>
+
+        <div class="desc-block">
+          <div class="desc-label">English:</div>
+          <div class="desc-text">Write the English description here.</div>
+        </div>
+
+        <a class="play-link" href="https://play.google.com/store/apps/details?id=..." target="_blank">
+          Google Playで見る / View on Google Play
+        </a>
+      </div>
+    </div>
+    -->
+  </main>
+
+  <footer>
+    © 2025 Joint Turnip Company
+  </footer>
 </body>
 </html>
